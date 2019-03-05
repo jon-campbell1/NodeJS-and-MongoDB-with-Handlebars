@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type="text/javascript")
+  body
+    ul
+      li My Text
+      input(type="text",value="Whatever").myClass
+      - var condition = true
+      if condition
+        p It's true
+      - var anyArray = [1,2,3,4]
+      each value in anyArray
+        p= value
+    block content

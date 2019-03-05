@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <style>
+  body {
+    font-family:arial;
+  }
+
+  label {
+    margin-top:10px;
+    font-size:10pt;
+    font-weight:bold;
+    display:block;
+  }
+
+  button {
+    width: 150px;
+    height:25px;
+    font-weight:bold;
+    margin-top:5px;
+  }
+
+  input[type=text]{
+    display:block;
+  }
+
+  section {
+    margin-right:15px;
+    float:left;
+    width:220px;
+    border:2px solid black;
+    padding:10px;
+  }
+
+  section:first-child {
+    background-color:#ffa8a8;
+  }
+
+  section:nth-child(2) {
+    background-color:#bcffbd;
+  }
+
+  section:nth-child(3) {
+    background-color:#ffe7af;
+  }
+
+  section:last-child {
+    background-color: #fcffb7;
+  }
+
+  a {
+    font-size:10pt;
+  }
+
+  a:visited{
+    color:blue;
+  }
+
+  .title{
+    font-size:10pt;
+    font-weight:bold;
+  }
+
+  .content {
+    margin-top:3px;
+    font-size:10pt;
+  }
+
+  .author {
+    margin-top: 3px;
+    font-weight:normal;
+    font-size:8pt;
+  }
+
+  </style>
+</head>
+<body>
+  {{{ body }}}
+</body>
+</html>

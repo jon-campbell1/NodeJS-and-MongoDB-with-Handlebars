@@ -1,0 +1,58 @@
+<h1>NodeJS and MongoDB</h1>
+<div>
+<section>
+<h3>Insert Data</h3>
+<hr>
+<form action='/insert' method='POST'>
+<label>Title</label>
+<input type=text name="title" id="title">
+<label>Content</label>
+<input type=text name="content" id="content">
+<label>Author</label>
+<input type=text name="author" id="author">
+<button type=submit>Submit</button>
+</form>
+</section>
+
+<section>
+<h3>Get All Data</h3>
+<hr>
+<a href='/get-data'>Get Data</a>
+<hr>
+{{#if items}}
+{{#each items as |item|}}
+<div class=title>{{item.title}} <span class=author>- By {{item.author}}</span></div>
+<div class=content>{{item.content}}</div>
+<div class=content>ID: {{item._id}}</div>
+<hr>
+{{/each}}
+{{/if}}
+</section>
+
+<section>
+<h3>Update Data</h3>
+<hr>
+<form action='/update' method='POST'>
+<label>ID</label>
+<input type=text name="id">
+<label for="title">Title</label>
+<input type=text name="title">
+<label>Content</label>
+<input type=text name="content">
+<label>Author</label>
+<input type=text name="author">
+<button type=submit>Submit</button>
+</form>
+</section>
+
+
+<section>
+<h3>Delete Data</h3>
+<hr>
+<form action='/delete' method='POST'>
+<label>ID</label>
+<input type=text name="id">
+<button type=submit>Delete</button>
+</form>
+</section>
+</div>
